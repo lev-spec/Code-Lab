@@ -176,6 +176,10 @@ nav ul li{
   border-radius: 10px;
 }
 
+.main_page_text_in_backgorund{
+    display: block;
+}
+
 /* ტელეფონებისთვის */
 @media (max-width: 480px) {
     .right_main_header{
@@ -183,6 +187,9 @@ nav ul li{
     }
     .right_main_header_for_480{
         display: block;
+    }
+    .main_page_text_in_backgorund{
+        display: none;
     }
 }
 /* პატარა ტელეფონები */
