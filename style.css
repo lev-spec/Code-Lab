@@ -92,14 +92,6 @@ nav ul li{
     position: relative; /* overlay-ს დასაწყობად */
 }
 
-.overlay_content {
-    position: absolute; /* სურათზე ჩასასმელად */
-    top: 50%; /* vertically ცენტრში */
-    left: 35%; /* horizontally ცენტრში */
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: rgb(239, 224, 224); /* ტექსტი კარგად გამოჩნდეს */
-}
 
 
 .main_page_text_in_backgorund{
@@ -179,43 +171,54 @@ nav ul li{
 .main_page_text_in_backgorund{
     display: block;
 }
+.overlay_content {
+    position: absolute;
+    top: 50%;       /* ვერტიკალურად ცენტრი */
+    left: 40%;      /* ჰორიზონტალურად ცენტრი */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(239, 224, 224);
+    width: 80%;        /* მასშტაბირებადია ყველა ეკრანზე */
+    max-width: 900px;  /* მაქსიმალური სიგანე დიდ ეკრანებზე */
+}
 
-/* ტელეფონებისთვის */
-@media (max-width: 480px) {
-    .right_main_header{
-        display: none;
-    }
-    .right_main_header_for_480{
-        display: block;
-    }
-    .main_page_text_in_backgorund{
-        display: none;
-    }
+.overlay_content h1 {
+    font-size: 3rem;   /* დიდი ეკრანისთვის */
+    margin-bottom: 20px;
 }
-/* პატარა ტელეფონები */
-@media (max-width: 360px) {
-        .right_main_header{
-        display: none;
-    }
-    .right_main_header_for_480{
-        display: block;
-    }
+
+.overlay_content p {
+    font-size: 2.5rem;
+    line-height: 1.5;
+
 }
+
 /* საშუალო ტელეფონები */
-@media (max-width: 414px) {
-        .right_main_header{
-        display: none;
+@media (max-width: 1030px) {
+    .overlay_content h1 {
+        font-size: 2.5rem;
     }
-    .right_main_header_for_480{
-        display: block;
+    .overlay_content p {
+        font-size: 1.3rem;
     }
 }
 
-@media (max-width: 1030px){
-        .right_main_header{
-        display: none;
+/* 480-414px ტელეფონები */
+@media (max-width: 480px) {
+    .overlay_content h1 {
+        font-size: 1.8rem;
     }
-    .right_main_header_for_480{
-        display: block;
+    .overlay_content p {
+        font-size: 1rem;
+    }
+}
+
+/* ძალიან პატარა ტელეფონები */
+@media (max-width: 360px) {
+    .overlay_content h1 {
+        font-size: 1.5rem;
+    }
+    .overlay_content p {
+        font-size: 0.9rem;
     }
 }
