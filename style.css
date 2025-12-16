@@ -193,32 +193,31 @@ nav ul li{
 
 }
 
+.right_main_header_2{
+    display: none;
+}
+
+
+
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* საშუალო ტელეფონები */
-@media (max-width: 1030px) {
-    .overlay_content h1 {
-        font-size: 2.5rem;
+@media (max-width: 1236px) {
+    .right_main_header{
+        display: none;
     }
-    .overlay_content p {
-        font-size: 1.3rem;
-    }
-}
-
-/* 480-414px ტელეფონები */
-@media (max-width: 480px) {
-    .overlay_content h1 {
-        font-size: 1.8rem;
-    }
-    .overlay_content p {
-        font-size: 1rem;
-    }
-}
-
-/* ძალიან პატარა ტელეფონები */
-@media (max-width: 360px) {
-    .overlay_content h1 {
-        font-size: 1.5rem;
-    }
-    .overlay_content p {
-        font-size: 0.9rem;
+    .right_main_header_2{
+        display: block;
     }
 }
