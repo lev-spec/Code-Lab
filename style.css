@@ -197,6 +197,7 @@ nav ul li{
 
 .right_main_header_2{
     display: none;
+
 }
 
 .mobile_menu {
@@ -228,3 +229,25 @@ nav ul li{
     background-color: rgba(0,0,0,0.2);
 }
 
+
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* საშუალო ტელეფონები */
+@media (max-width: 1236px) {
+    .right_main_header{
+        display: none;
+    }
+    .right_main_header_2{
+        display: block;
+    }
+}
